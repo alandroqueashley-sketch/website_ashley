@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-image: url("https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/115910598_3113362865423634_4594492748975103120_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kTbCR-3HYcYQ7kNvwErgdbj&_nc_oc=AdlLWIqJcMImbnL4sOvM8OeJ2XBJ1XUx3ZepDOQPXiXpAtjPga2-Y7R8HGysmiZc9XM&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&_nc_gid=g6l0IqRy2_-ZeQ7kwTZMVQ&oh=00_AfnSwF6vAnFzKULA_WcZE7WFF_I9M_OQkNVk6RHngGPY5A&oe=69633CB4");
+            background-position: 0 70pxpx;
+            background-repeat: no-repeat; 
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background-color: rgba(255, 255, 255, 0.438);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #0078ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fcc;
+        }
+
+        #errorMessage {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .signup-link {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .signup-link a {
+            color: #0078ff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <center>
+        <img src="pics/hahah.jpg" alt="TCGC" style="width: 80px; height: 80px; border-radius: 50%;">
+        <h1 style="color: green;">Tangub City Global College</h1>
+
+        <input type="text" id="username" placeholder="Enter username">
+        <input type="password" id="password" placeholder="Enter password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="errorMessage">Sorry, this account won't be able to login.<br>Please try again.</p>
+
+        <div class="signup-link">
+            <a href="#">Don't have an account? Sign in!</a>
+            
+        </center>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            console.dir(document.location);
+            const correctUser = "admin";
+            const correctPass = "123";
+
+            const user = document.getElementById("username").value;
+            const pass = document.getElementById("password").value;
+            const error = document.getElementById("errorMessage");
+
+            if (user === correctUser && pass === correctPass) {
+                document.location.href = "HOME.html"
+            } else {
+                error.style.display = "block";
+            }
+        }
+</script>
+
+        
+    </script>
+</body>
+</html>
+
+        

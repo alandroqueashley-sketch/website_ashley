@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Ethics & Responsible Use</title>
+    
+    <link href="COMMUNITYSERVICE_ADVOCACY.html" rel="stylesheet">
+    <link rel="stylesheet" href="JFIUNISVB">
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #694e83, #ffffffa2);
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(255,255,255,0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h1 {
+            color: #630045;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li {
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li:hover {
+            color: #a64dff;
+        }
+
+        
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .alt {
+            background: rgb(207, 155, 155);
+            border-radius: 20px;
+            margin: 50px auto;
+            max-width: 1000px;
+            padding: 50px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #7da50f;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+
+        
+        .rules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #e7c4ff, #b29ebd);
+            padding: 30px 25px;
+            border-radius: 15px;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: #632400d7;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #5495e0d5;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+
+        footer {
+            background: #d606c56b;
+            color: white
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer a {
+            color: #f0cfff;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <h1>Digital Ethics</h1>
+        <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="intro" class="section">
+        <div class="alt">
+            <h2>Welcome to Digital Ethics & Responsible Use</h2>
+            <p>In our digital age, responsible technology use is crucial. Follow these core principles to ensure safety, respect, and integrity online.</p>
+        </div>
+    </section>
+
+    
+    <section id="rules" class="section">
+        <h2>Core Principles</h2>
+        <p>These rules guide ethical and responsible digital behavior.</p>
+        <div class="rules">
+            <div class="card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Respect Privacy</h3>
+                <p>Always protect your own and others' personal information and avoid sharing sensitive data without consent.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Be Honest</h3>
+                <p>Share accurate information and avoid spreading rumors or misinformation online.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-handshake"></i>
+                <h3>Practice Courtesy</h3>
+                <p>Communicate respectfully, avoiding harassment, bullying, or offensive language.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Your Accounts</h3>
+                <p>Use strong passwords, enable 2FA, and be vigilant about cybersecurity practices.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer id="contact">
+        <p>© 2025 Digital Ethics Initiative | Connect with us:</p>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </footer>
+
+</body>
+</html>
+
+            

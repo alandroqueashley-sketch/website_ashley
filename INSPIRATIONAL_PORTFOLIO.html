@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirational Portfolio</title>
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fef9f3, #fff);
+            color: #333;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            color: #ff00bf8e;
+            text-shadow: 0 3px 8px rgba(255, 187, 0, 0.3);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            color: plum;
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+<section id="portfolio" class="section">
+    <h2>Inspirational Portfolio</h2>
+    <p>Here are my works inspired by the theme <strong>“Light of the World”</strong>:</p>
+
+    <div class="portfolio-grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?crop=entropy&cs=tinysrgb&fit=max&h=180&w=270" alt="Digital Poster">
+            <div class="card-content">
+                <h3>Digital Poster</h3>
+                <p>A poster encouraging kindness online.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/sunset.jfif" alt="Reflection Essay">
+            <div class="card-content">
+                <h3>Short Reflection Essay</h3>
+                <p>"Follow effective action with quiet reflection. From the quiet reflection will come even more effective action.".</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pics/art.webp" alt="Creative Artwork">
+            <div class="card-content">
+                <h3>Creative Artwork</h3>
+                <p>Art representing God’s light in our lives.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

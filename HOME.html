@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: url("./pics/hcvlg.jfif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 80%;
+            color: #222;
+        }
+
+       
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #319612;
+            font-size: 45px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+        }
+
+        
+        .section {
+            width: 80%;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            animation: fadeSlide 2s ease-in-out;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .section:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+        }
+
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        
+        .section a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .section a:hover {
+            background-color: #000;
+        }
+
+       
+        .reflection { background: rgba(168, 168, 100, 0.486); }
+        .community { background: rgba(157, 240, 157, 0.753); }
+        .portfolio { background: rgba(190, 145, 190, 0.85); }
+        .education { background: rgba(166, 219, 219, 0.85); }
+        .faith { background: rgba(199, 116, 144, 0.85); }
+
+        
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            .section {
+                width: 95%;
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HOME PAGE</h1>
+
+    <div class="section reflection">
+        <h2>Personal Reflection</h2>
+        <p>“Knowing yourself is the beginning of all wisdom.”</p>
+        <a href="PERSONAL_REFLECTION.html" target="_blank">See More</a>
+    </div>
+
+    <div class="section community">
+        <h2>Community Service</h2>
+        <p>Helping one person may not change the world, but it can change the world for that person.</p>
+        <a href="COMMUNITYSERVICE_ADVOCACY.html" target="_blank">See More</a>
+    </div>
+
+    <div class="section portfolio">
+        <h2>Inspirational Portfolio</h2>
+        <p>Leaves the viewer motivated or curious, not just informed.</p>
+        <a href="INSPIRATIONAL_PORTFOLIO.html" target="_blank">See More</a>
+    </div>
+
+    <div class="section education">
+        <h2>Educational Information</h2>
+        <p>Encouraging lifelong learning through accessible knowledge.</p>
+        <a href="EDUCATIONAL_INFORMATION.html" target="_blank">See More</a>
+    </div>
+
+    <div class="section faith">
+        <h2>Faith and Technology</h2>
+        <p>Using technology ethically while strengthening faith and spiritual practice.</p>
+        <a href="FAITH_TECHNOLOGY.html" target="_blank">See More</a>
+    </div>
+
+</body>
+</html>
